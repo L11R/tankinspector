@@ -135,6 +135,7 @@ namespace Smellyriver.TankInspector.Modeling
 
         public CamouflageValue CamouflageValue { get; internal set; }
         public Invisibility Invisibility { get; internal set; }
+        public SiegeMode SiegeMode { get; internal set; }
 
         public TankClass Class { get; internal set; }
 

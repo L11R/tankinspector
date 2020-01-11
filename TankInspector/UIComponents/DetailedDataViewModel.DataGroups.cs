@@ -196,6 +196,30 @@ namespace Smellyriver.TankInspector.UIComponents
             AddRelationship(maxLoad.Descriptor, "enhancedSuspension");
             miscellaneousViewDescriptor.Items.Add(maxLoad);
 
+            var siegeMode = new ComplexDataItemViewDescriptor("SiegeMode");
+
+            Predicate<TankViewModelBase> hasSiegeModePredicate = t => t.HasSiegeMode;
+
+            var switchOnTime = new DataItemViewDescriptor("SiegeModeSwitchOnTime", SiegeModeViewModel.SiegeModeSwitchOnTimeDescriptor, -25, hasSiegeModePredicate);
+            siegeMode.Items.Add(switchOnTime);
+            
+            var switchOffTime = new DataItemViewDescriptor("SiegeModeSwitchOffTime", SiegeModeViewModel.SiegeModeSwitchOffTimeDescriptor, -50, hasSiegeModePredicate);
+            siegeMode.Items.Add(switchOffTime);
+            
+            var engineDamageCoeff = new DataItemViewDescriptor("SiegeModeEngineDamageCoeff", SiegeModeViewModel.SiegeModeEngineDamageCoeffDescriptor, -100, hasSiegeModePredicate);
+            siegeMode.Items.Add(engineDamageCoeff);
+            
+            var AutoSwitchOnRequiredVehicleSpeed = new DataItemViewDescriptor("SiegeModeAutoSwitchOnRequiredVehicleSpeed", SiegeModeViewModel.SiegeModeAutoSwitchOnRequiredVehicleSpeedDescriptor, -125, hasSiegeModePredicate);
+            siegeMode.Items.Add(AutoSwitchOnRequiredVehicleSpeed);
+            
+            var AutoSwitchOffRequiredVehicleSpeed = new DataItemViewDescriptor("SiegeModeAutoSwitchOffRequiredVehicleSpeed", SiegeModeViewModel.SiegeModeAutoSwitchOffRequiredVehicleSpeedDescriptor, -150, hasSiegeModePredicate);
+            siegeMode.Items.Add(AutoSwitchOffRequiredVehicleSpeed);
+            
+            var switchCancelEnabled = new DataItemViewDescriptor("SiegeModeSwitchCancelEnabled", SiegeModeViewModel.SiegeModeSwitchCancelEnabledDescriptor, -175, hasSiegeModePredicate);
+            siegeMode.Items.Add(switchCancelEnabled);
+            
+            miscellaneousViewDescriptor.Items.Add(siegeMode);
+
             return new DataViewModel(miscellaneousViewDescriptor);
         }
 

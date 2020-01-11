@@ -117,7 +117,11 @@ namespace Smellyriver.TankInspector.IO.XmlDecoding
         {
             var content = XmlDecoder.Decode(contentStream);
 #if DEBUG
-			this.DecodedXml = content;
+            this.DecodedXml = content;
+            if (content.Contains("vehicles/sweden/S22_Strv_S1"))
+            {
+                this.DecodedXml = content;
+            }
 #endif
 			_contentStream = content.ToStream();
             _reader = new XmlTextReader(_contentStream);

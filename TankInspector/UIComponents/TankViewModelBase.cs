@@ -29,6 +29,11 @@ namespace Smellyriver.TankInspector.UIComponents
 
         public new PriceViewModel Price { get; protected set; }
 
+        public bool HasSiegeMode
+        {
+            get => this.Tank.SiegeMode != null;
+        }
+
         public virtual double Health => this.LoadedModules.Turret.Turret.MaxHealth + this.LoadedModules.Hull.Hull.MaxHealth;
 
 	    public double ModuleWeight

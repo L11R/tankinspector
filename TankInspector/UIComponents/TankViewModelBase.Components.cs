@@ -78,7 +78,7 @@ namespace Smellyriver.TankInspector.UIComponents
 
         public HullViewModel Hull { get; private set; }
         public FuelTankViewModel FuelTank { get; private set; }
-
+        public SiegeModeViewModel SiegeMode { get; private set; }
 
         private int _changeModulesProcedureCount = 0;
 
@@ -187,6 +187,7 @@ namespace Smellyriver.TankInspector.UIComponents
 
             this.Hull = new HullViewModel(this.CommandBindings, this.Tank.Hull, this);
             this.FuelTank = new FuelTankViewModel(this.CommandBindings, this.Tank.AvailableFuelTanks.Values.FirstOrDefault(), this);
+            this.SiegeMode = new SiegeModeViewModel(this.Tank.SiegeMode);
 
             this.LoadedModules.Hull = this.Hull;
             this.LoadedModules.FuelTank = this.FuelTank;

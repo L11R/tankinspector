@@ -14,6 +14,7 @@ namespace Smellyriver.TankInspector.Modeling
         BattleTierSpan BattleTiers { get; }
         CamouflageValue CamouflageValue { get; }    // pre 9.15
         Invisibility Invisibility { get; }  // post 9.15
+        SiegeMode SiegeMode { get; }
         double CrewExperienceFactor { get; }
         List<Crew> Crews { get; }
         string Description { get; }

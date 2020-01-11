@@ -3,7 +3,7 @@ using System.Xml;
 
 namespace Smellyriver.TankInspector.Modeling
 {
-	internal class TankInfo : Commodity, ITankInfo
+	internal class TankInfo : Commodity, ITankInfo, ISectionDeserializable
     {
 
         private string _name;

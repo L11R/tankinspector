@@ -16,7 +16,7 @@ namespace Smellyriver.TankInspector.IO
 
         static PackageStream()
         {
-            ZipConstants.DefaultCodePage = System.Text.Encoding.UTF8.CodePage;
+            ZipStrings.CodePage = System.Text.Encoding.UTF8.CodePage;
             SCachedZipFiles = new Dictionary<string, ZipFile>();
         }
 

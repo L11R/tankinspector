@@ -31,7 +31,7 @@ namespace Smellyriver.TankInspector.Modeling
         private Queue<Vector3D> _turretPosition=new Queue<Vector3D>();
         public Vector3D TurretPosition
         {
-            get => _turretPosition.Dequeue();
+            get => _turretPosition.Peek();
             set => _turretPosition.Enqueue(value);
         }
 
@@ -73,16 +73,19 @@ namespace Smellyriver.TankInspector.Modeling
 
 
                 case "turretPositions":
-
+                    Vector3D pos = null;
                     while (!reader.Name.Equals("turretPositions"))
                     {
                         reader.ReadStartElement(reader.Name);
-                        Vector3D pos;
                         reader.Read(out pos);
                         _turretPosition.Enqueue(pos);
                         reader.ReadEndElement();
                     }
-                    return true;
+                    if (pos != null) {
+                        return true;
+                    }
+
+                    return false;
 
                 case "swinging":
                 case "exhaust":

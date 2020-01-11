@@ -4,8 +4,6 @@ namespace Smellyriver.TankInspector.UIComponents
 {
 	internal partial class TankViewModelBase
 	{
-
-
 		public static readonly DataItemDescriptor<TankViewModelBase> HealthDescriptor;
 		public static readonly DataItemDescriptor<TankViewModelBase> EquipmentWeightDescriptor;
 		public static readonly DataItemDescriptor<TankViewModelBase> WeightDescriptor;
@@ -17,6 +15,7 @@ namespace Smellyriver.TankInspector.UIComponents
 		public static readonly DataItemDescriptor<TankViewModelBase> MovingCamouflageDescriptor;
 		public static readonly DataItemDescriptor<TankViewModelBase> FiringStationaryCamouflageDescriptor;
 		public static readonly DataItemDescriptor<TankViewModelBase> FiringMovingCamouflageDescriptor;
+
 
 		static TankViewModelBase()
 		{

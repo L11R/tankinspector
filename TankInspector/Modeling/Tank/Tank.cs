@@ -36,6 +36,9 @@ namespace Smellyriver.TankInspector.Modeling
 	    private Invisibility _invisibility;
         public Invisibility Invisibility => _invisibility;
 
+        private SiegeMode _siegeMode;
+        public SiegeMode SiegeMode => _siegeMode;
+
 	    public bool IsPremiumTank => this.CurrencyType == CurrencyType.Gold;
 
 	    public IEnumerable<HierachyInfo<Tank>> Predecessors => this.Nation.TechTree.GetPredecessors<Tank>(this);
@@ -365,6 +368,10 @@ namespace Smellyriver.TankInspector.Modeling
                     reader.Read(out _invisibility);
                     return true;
 
+                case "siege_mode":
+                    reader.Read(out _siegeMode);
+                    return true;
+
                 case "effects":
                 case "emblems":
                 case "horns":
@@ -376,7 +383,6 @@ namespace Smellyriver.TankInspector.Modeling
                 case "defaultCamouflageIDs":
                 case "customDefaultCamouflage":
                 case "physics":
-                case "siege_mode":
                 case "hull_aiming":
                 case "isRotationStill":
                 case "useHullZ":

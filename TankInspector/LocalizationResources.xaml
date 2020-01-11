@@ -425,6 +425,31 @@
     <system:String x:Uid="L10N_TurretHorizontalTraverseDescription" x:Key="L10N_TurretHorizontalTraverseDescription">The horizontal traverse range of the turret.</system:String>
     <system:String x:Uid="L10N_TurretHealthDescription" x:Key="L10N_TurretHealthDescription">The maximum health of the turret, which will be added up to the maximum health of the tank</system:String>
     <system:String x:Uid="L10N_TurretWeightDescription" x:Key="L10N_TurretWeightDescription">The weight of the turret.</system:String>
+    
+    <system:String x:Uid="L10N_SiegeMode" x:Key="L10N_SiegeMode">Siege mode</system:String>
+    <system:String x:Uid="L10N_SiegeModeSwitchCancelEnabledYes" x:Key="L10N_SiegeModeSwitchCancelEnabledYes">Yes</system:String>
+    <system:String x:Uid="L10N_SiegeModeSwitchCancelEnabledNo" x:Key="L10N_SiegeModeSwitchCancelEnabledNo">No</system:String>
+    
+    <system:String x:Uid="L10N_SiegeModeSwitchOnTime" x:Key="L10N_SiegeModeSwitchOnTime">Switch on time</system:String>
+    <system:String x:Uid="L10N_SiegeModeSwitchOffTime" x:Key="L10N_SiegeModeSwitchOffTime">Switch off time</system:String>
+    <system:String x:Uid="L10N_SiegeModeEngineDamageCoeff" x:Key="L10N_SiegeModeEngineDamageCoeff">Engine dmg coef.</system:String>
+    <system:String x:Uid="L10N_SiegeModeAutoSwitchOnRequiredVehicleSpeed" x:Key="L10N_SiegeModeAutoSwitchOnRequiredVehicleSpeed">Auto on min. speed</system:String>
+    <system:String x:Uid="L10N_SiegeModeAutoSwitchOffRequiredVehicleSpeed" x:Key="L10N_SiegeModeAutoSwitchOffRequiredVehicleSpeed">Auto off min. speed</system:String>
+    <system:String x:Uid="L10N_SiegeModeSwitchCancelEnabled" x:Key="L10N_SiegeModeSwitchCancelEnabled">Cancel enabled</system:String>
+    
+    <system:String x:Uid="L10N_SiegeModeSwitchOnTimeFullName" x:Key="L10N_SiegeModeSwitchOnTimeFullName">Switch on time</system:String>
+    <system:String x:Uid="L10N_SiegeModeSwitchOffTimeFullName" x:Key="L10N_SiegeModeSwitchOffTimeFullName">Switch off time</system:String>
+    <system:String x:Uid="L10N_SiegeModeEngineDamageCoeffFullName" x:Key="L10N_SiegeModeEngineDamageCoeffFullName">Engine damage coef.</system:String>
+    <system:String x:Uid="L10N_SiegeModeAutoSwitchOnRequiredVehicleSpeedFullName" x:Key="L10N_SiegeModeAutoSwitchOnRequiredVehicleSpeedFullName">Auto-switch on minimal speed</system:String>
+    <system:String x:Uid="L10N_SiegeModeAutoSwitchOffRequiredVehicleSpeedFullName" x:Key="L10N_SiegeModeAutoSwitchOffRequiredVehicleSpeedFullName">Auto-switch off minimal speed</system:String>
+    <system:String x:Uid="L10N_SiegeModeSwitchCancelEnabledFullName" x:Key="L10N_SiegeModeSwitchCancelEnabledFullName">Switch cancel enabled</system:String>
+    
+    <system:String x:Uid="L10N_SiegeModeSwitchOnTimeDescription" x:Key="L10N_SiegeModeSwitchOnTimeDescription">Switch on time</system:String>
+    <system:String x:Uid="L10N_SiegeModeSwitchOffTimeDescription" x:Key="L10N_SiegeModeSwitchOffTimeDescription">Switch off time</system:String>
+    <system:String x:Uid="L10N_SiegeModeEngineDamageCoeffDescription" x:Key="L10N_SiegeModeEngineDamageCoeffDescription">Engine damage coef.</system:String>
+    <system:String x:Uid="L10N_SiegeModeAutoSwitchOnRequiredVehicleSpeedDescription" x:Key="L10N_SiegeModeAutoSwitchOnRequiredVehicleSpeedDescription">Auto-switch on minimal speed</system:String>
+    <system:String x:Uid="L10N_SiegeModeAutoSwitchOffRequiredVehicleSpeedDescription" x:Key="L10N_SiegeModeAutoSwitchOffRequiredVehicleSpeedDescription">Auto-switch off minimal speed</system:String>
+    <system:String x:Uid="L10N_SiegeModeSwitchCancelEnabledDescription" x:Key="L10N_SiegeModeSwitchCancelEnabledDescription">Switch cancel enabled</system:String>
 
     <system:String x:Uid="L10N_AverageDamageDealtDescription" x:Key="L10N_AverageDamageDealtDescription">Average damage dealt per battle. This is a LiveStat which is based on random battles in the last 30 days. Data provided by vBAddict.net.</system:String>
     <system:String x:Uid="L10N_AverageDamageReceivedDescription" x:Key="L10N_AverageDamageReceivedDescription">Average damage received per battle. This is a LiveStat which is based on random battles in the last 30 days. Data provided by vBAddict.net.</system:String>
