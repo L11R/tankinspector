@@ -15,6 +15,12 @@ namespace Smellyriver.TankInspector.Modeling
                 case "StaticFactorDevice":
                     script = new StaticFactorDeviceScript(database);
                     break;
+                case "UpgradableStaticFactorDevice":
+                    script = new StaticFactorDeviceScript(database);//UpgradableStaticFactorDeviceScript(database);
+                    break;
+                case "UpgradedStaticFactorDevice":
+                    script = new StaticFactorDeviceScript(database);//UpgradedStaticFactorDeviceScript(database);
+                    break;
                 case "AntifragmentationLining":
                     script = new AntifragmentationLiningScript(database);
                     break;

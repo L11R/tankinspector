@@ -364,9 +364,11 @@ namespace Smellyriver.TankInspector.UIComponents
 			GunTraverseHelper.CartesianToPolar(center, position, out double distance, out double degree);
             degree -= this.VehicleYaw;
             var turretYaw = GunTraverseHelper.NormalizeAngle(degree);
-            var gunPitch = _inverseVerticalTraverseConverter(distance);
-
-            this.SetRotation(turretYaw, gunPitch);
+            if (_inverseVerticalTraverseConverter != null)
+            {
+                var gunPitch = _inverseVerticalTraverseConverter(distance);
+                this.SetRotation(turretYaw, gunPitch);
+            }
         }
 
         private void ClampRotation(ref double turretYaw, ref double gunPitch)

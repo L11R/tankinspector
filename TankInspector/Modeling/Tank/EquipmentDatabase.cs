@@ -22,7 +22,10 @@ namespace Smellyriver.TankInspector.Modeling
             {
                 Equipment equipment = new Equipment(this.Database);
                 equipment.Deserialize(reader);
-                Equipments.Add(equipment.Key, equipment);
+                if (equipment.Key != "xmlref")
+                {
+                    Equipments.Add(equipment.Key, equipment);
+                }
             }
         }
     }
